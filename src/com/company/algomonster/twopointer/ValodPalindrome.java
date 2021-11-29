@@ -14,21 +14,22 @@ public class ValodPalindrome {
 
     // 알파벳 문자가 아닌 경우는 포인터는 문자를 찾아나서야 한다.
     private static boolean isPalindrome(String s) {
+        s = s.toLowerCase();
         int l = 0;
         int r = s.length() - 1;
 
         while(l < r) {
-            char lch = Character.toLowerCase(s.charAt(l));
-            char rch = Character.toLowerCase(s.charAt(r));
+            char lch = s.charAt(l);
+            char rch = s.charAt(r);
 
             while (!Character.isAlphabetic(lch)) {
                 l++;
-                lch = Character.toLowerCase(s.charAt(l));
+                lch = s.charAt(l);
             }
 
             while(!Character.isAlphabetic(rch)) {
                 r--;
-                rch = Character.toLowerCase(s.charAt(r));
+                rch = s.charAt(r);
             }
 
 //            System.out.println("left ch " + lch + " rightmost ch " + rch);

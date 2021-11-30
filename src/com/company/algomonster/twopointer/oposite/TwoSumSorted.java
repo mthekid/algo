@@ -1,4 +1,4 @@
-package com.company.algomonster.twopointer;
+package com.company.algomonster.twopointer.oposite;
 
 import java.util.Arrays;
 import java.util.LinkedList;

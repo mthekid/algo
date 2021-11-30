@@ -1,4 +1,4 @@
-package com.company.algomonster.twopointer;
+package com.company.algomonster.twopointer.samedirection;
 
 public class FindMiddleOfLinkedList {
     public static class ListNode {
@@ -28,7 +28,7 @@ public class FindMiddleOfLinkedList {
             cur.next = node;
             cur = node;
         }
-        System.out.println(middleOfLinkedList(dummy.next)); // 재귀적으로 처리되어 있다...
+//        System.out.println(middleOfLinkedList(dummy.next)); // 재귀적으로 처리되어 있다...
 
     }
 

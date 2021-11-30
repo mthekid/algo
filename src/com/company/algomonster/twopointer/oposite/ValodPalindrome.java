@@ -1,4 +1,4 @@
-package com.company.algomonster.twopointer;
+package com.company.algomonster.twopointer.oposite;
 
 /**
  * 반대 방향 포인터 문제.

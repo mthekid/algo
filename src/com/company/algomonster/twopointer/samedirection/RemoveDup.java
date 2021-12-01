@@ -25,6 +25,20 @@ public class RemoveDup {
         return arr.subList(0, idx + 1).size();
     }
 
+    public static int solution(List<Integer> arr) {
+        int slow = 0;
+        for (int fast = 0; fast < arr.size() - 1; fast++) {
+            int curv = arr.get(fast);
+            int nextv = arr.get(fast+1);
+
+            if(curv != nextv) {
+                slow++;
+                arr.set(slow, nextv);
+            }
+        }
+        return slow + 1;
+    }
+
     public static List<String> splitWords(String s) {
         return s.isEmpty() ? List.of() : Arrays.asList(s.split(" "));
     }

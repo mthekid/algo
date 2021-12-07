@@ -12,7 +12,7 @@ public class StockTrade {
 
     public static void main(String[] args) {
         List<Integer> prices = Arrays.asList(310, 315, 275, 295, 260, 270, 290, 230, 255, 250);
-        System.out.println(highestDiff(prices));
+        System.out.println(computeMaxProfit(prices));
 
     }
 
@@ -34,9 +34,9 @@ public class StockTrade {
     }
 
     // solution
-    public static double computeMaxProfit(List<Double> prices) {
+    public static double computeMaxProfit(List<Integer> prices) {
         double minPrice = Double.MAX_VALUE, maxProfit = 0.0;
-        for(Double price : prices) {
+        for(Integer price : prices) {
             maxProfit = Math.max(maxProfit, price - minPrice);
             minPrice = Math.min(minPrice, price);
         }
